@@ -6,14 +6,14 @@ import {VIDEO_QUALITY_SELECT} from "../Administration/ConsoleGlobalMessageManage
 declare const navigator:any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
 const localValueVideo = localStorage.getItem(VIDEO_QUALITY_SELECT);
-let valueVideo = 20;
+let valueVideo = 30;
 if(localValueVideo){
     valueVideo = parseInt(localValueVideo);
 }
 let videoConstraint: boolean|MediaTrackConstraints = {
     width: { min: 640, ideal: 1280, max: 1920 },
     height: { min: 400, ideal: 720 },
-    frameRate: {exact: valueVideo, ideal: valueVideo},
+    frameRate: { ideal: valueVideo },
     facingMode: "user",
     resizeMode: 'crop-and-scale',
     aspectRatio: 1.777777778

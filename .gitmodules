@@ -1,0 +1,4 @@
+[submodule "maps/wiai-home"]
+	path = maps/wiai-home
+	url = https://github.com/fs-wiai/wiai-home.git
+	branch = production
