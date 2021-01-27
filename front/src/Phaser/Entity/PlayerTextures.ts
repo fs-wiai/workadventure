@@ -35,6 +35,12 @@ export const PLAYER_RESOURCES: BodyResourceDescriptionListInterface = {
     "Female10": {name: "Female10", img: "resources/characters/pipoya/Female 05-3.png"},
     "Female11": {name: "Female11", img: "resources/characters/pipoya/Teacher fmale 02.png"},
     "Female12": {name: "Female12", img: "resources/characters/pipoya/su4 Student fmale 12.png"},
+	"Cat1": {name: "Cat1", img: "resources/characters/pipoya/Cat 01-1.png"},
+	"Cat2": {name: "Cat2", img: "resources/characters/pipoya/Cat 01-2.png"},
+	"Cat3": {name: "Cat3", img: "resources/characters/pipoya/Cat 01-3.png"},
+	"Dog1": {name: "Dog1", img: "resources/characters/pipoya/Dog 01-1.png"},
+	"Dog2": {name: "Dog2", img: "resources/characters/pipoya/Dog 01-2.png"},
+	"Dog3": {name: "Dog3", img: "resources/characters/pipoya/Dog 01-3.png"}
 };
 
 export const COLOR_RESOURCES: BodyResourceDescriptionListInterface = {
