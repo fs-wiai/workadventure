@@ -11,8 +11,6 @@
 html {
   font-family: vcr;
   font-size: 14pt;
-  color: white;
-  background-color: #242424;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,16 +18,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  padding: 1rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem;
 }
 
 a:active,
 a:link,
 a:hover,
 a:visited {
-  color: white;
+  color: black;
+}
+
+ol, p {
+  line-height: 1.2;
 }
