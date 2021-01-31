@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'ka1';
+  src: url('fonts/ka1.ttf');
+}
+
+@font-face {
+  font-family: 'vcr';
+  src: url('fonts/VCR_OSD.ttf');
+}
+
+html {
+  font-family: vcr;
+  font-size: 14pt;
+  color: white;
+  background-color: #242424;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: ka1;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a:active,
+a:link,
+a:hover,
+a:visited {
+  color: white;
+}
