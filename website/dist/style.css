@@ -11,8 +11,6 @@
 html {
   font-family: vcr;
   font-size: 14pt;
-  color: white;
-  background-color: #242424;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,7 +35,7 @@ a:active,
 a:link,
 a:hover,
 a:visited {
-  color: white;
+  color: black;
 }
 
 ol, p {
