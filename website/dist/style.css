@@ -20,11 +20,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  padding: 1rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem;
 }
 
 a:active,
@@ -34,6 +40,6 @@ a:visited {
   color: white;
 }
 
-ol {
+ol, p {
   line-height: 1.2;
 }
