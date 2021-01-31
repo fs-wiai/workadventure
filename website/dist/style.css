@@ -33,3 +33,7 @@ a:hover,
 a:visited {
   color: white;
 }
+
+ol {
+  line-height: 1.2;
+}
