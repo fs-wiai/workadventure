@@ -27,9 +27,17 @@ body {
   padding: 1rem;
 }
 
-main {
+main, footer {
   max-width: 800px;
   margin: 2rem;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  padding-top: 2rem;
+  margin-top: 0;
+  border-top: 1px solid gray;
 }
 
 a:active,
