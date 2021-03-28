@@ -1140,3 +1140,24 @@ div.action p.action-body{
     50% {bottom: 30px;}
     100% {bottom: 40px;}
 }
+
+/* Fachschaft WIAI */ 
+.mobile-warning {
+    background-color: #fcdf00;
+    position: absolute;
+    padding: 2rem;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .mobile-warning {
+        display: flex;
+    }
+}
