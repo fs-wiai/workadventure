@@ -635,6 +635,10 @@ export class GameScene extends ResizableScene implements CenterListener {
                 }
             }
         });
+        this.gameMap.onPropertyChange('switchInstance', (newValue, oldValue) => {
+            console.log('Switching instance. New host: ' + newValue);
+            (window as any).location = newValue
+        });
         this.gameMap.onPropertyChange('jitsiRoom', (newValue, oldValue, allProps) => {
             if (newValue === undefined) {
                 layoutManager.removeActionButton('jitsiRoom', this.userInputManager);
