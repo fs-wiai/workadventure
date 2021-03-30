@@ -53,7 +53,7 @@ export class GameMap {
         const properties = new Map<string, string|boolean|number>();
 
         for (const layer of this.map.layers) {
-            if (layer.type !== 'tilelayer') {
+            if (layer.type !== 'tilelayer' || !layer.visible) {
                 continue;
             }
             const tiles = layer.data as number[];

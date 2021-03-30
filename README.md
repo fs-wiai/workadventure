@@ -1,4 +1,4 @@
-# WorkAdventure
+# WorkAdventure (FSWIAI Edition)
 
 ## Cloning the repository
 
@@ -8,7 +8,7 @@ We include our maps as a submodule, therefore the git clone command changes to:
 git clone --recurse-submodules -b fswiai-development git@github.com:fs-wiai/workadventure.git
 ```
 
-Production code is on branch `fswiai-production`.
+Production code is on branch `fswiai-production` or `neutral-instance`.
 
 ## Getting started
 

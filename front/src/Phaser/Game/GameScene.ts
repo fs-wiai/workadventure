@@ -340,7 +340,7 @@ export class GameScene extends ResizableScene implements CenterListener {
         this.Layers = new Array<Phaser.Tilemaps.TilemapLayer>();
         let depth = -2;
         for (const layer of this.mapFile.layers) {
-            if (layer.type === 'tilelayer') {
+            if (layer.type === 'tilelayer' && layer.visible) {
                 this.addLayer(this.Map.createLayer(layer.name, this.Terrains, 0, 0).setDepth(depth));
 
                 const exitSceneUrl = this.getExitSceneUrl(layer);
@@ -634,6 +634,10 @@ export class GameScene extends ResizableScene implements CenterListener {
                     openWebsiteFunction();
                 }
             }
+        });
+        this.gameMap.onPropertyChange('switchInstance', (newValue, oldValue) => {
+            console.log('Switching instance. New host: ' + newValue);
+            (window as any).location = newValue
         });
         this.gameMap.onPropertyChange('jitsiRoom', (newValue, oldValue, allProps) => {
             if (newValue === undefined) {

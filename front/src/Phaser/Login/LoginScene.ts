@@ -20,6 +20,7 @@ export class LoginScene extends ResizableScene {
     private pressReturnField!: TextField;
     private logo!: Image;
     private name: string = '';
+    private hint!: TextField;
 
     constructor() {
         super({
@@ -44,8 +45,9 @@ export class LoginScene extends ResizableScene {
         this.nameInput = new TextInput(this, this.game.renderer.width / 2, 70, 8, this.name,(text: string) => {
             this.name = text;
         });
+        this.hint = new TextField(this, this.game.renderer.width / 2, 100, '(Just start typing)');
 
-        this.pressReturnField = new TextField(this, this.game.renderer.width / 2, 130, 'Press enter to start');
+        this.pressReturnField = new TextField(this, this.game.renderer.width / 2, 180, 'Press enter to start');
 
         this.logo = new Image(this, this.game.renderer.width - 30, this.game.renderer.height - 20, LoginTextures.icon);
         this.add.existing(this.logo);
@@ -81,6 +83,7 @@ export class LoginScene extends ResizableScene {
 
     public onResize(ev: UIEvent): void {
         this.textField.x = this.game.renderer.width / 2;
+        this.hint.x = this.game.renderer.width / 2;
         this.nameInput.setX(this.game.renderer.width / 2 - 64);
         this.pressReturnField.x = this.game.renderer.width / 2;
         this.logo.x = this.game.renderer.width - 30;
