@@ -20,6 +20,7 @@ export class LoginScene extends ResizableScene {
     private pressReturnField!: TextField;
     private logo!: Image;
     private name: string = '';
+    private hint!: TextField;
 
     constructor() {
         super({
